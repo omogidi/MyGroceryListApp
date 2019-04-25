@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardViewID"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:padding="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/name"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/groceryName" />
+
+            <TextView
+                android:id="@+id/qty"
+                android:textStyle="italic"
+                android:padding="5dp"
+                android:layout_below="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/qty" />
+
+            <TextView
+                android:id="@+id/dateAdded"
+                android:textStyle="italic"
+                android:paddingTop="5dp"
+                android:layout_below="@+id/qty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/date_added" />
+
+            <TableRow
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                android:layout_alignBottom="@+id/dateAdded">
+
+                <Button
+                    android:id="@+id/editButton"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@android:drawable/ic_menu_edit"/>
+                <Button
+                    android:id="@+id/deleteButton"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@android:drawable/ic_menu_delete"/>
+
+            </TableRow>
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
